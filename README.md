@@ -101,29 +101,11 @@ const text = "";
 const word = "zoinks";
 Expected: 0
 
-Test: "It should return 1 occurence for word 'muppeteer'"
+Test: "It should return array excluding omitted bad words."
 Code:
-const text = "Muppeteer! Thats a fast car.";
-const word = "muppeteer";
-Expected: 1
-
-Test: "It should return 1 occurence for word 'biffaroni'"
-Code:
-const text = "biffaroni! Thats a fast car.";
+const text = "Dang, look at the biffaroni over there.";
 const word = "biffaroni";
-Expected: 1
-
-Test: "It should return 1 occurence for word 'loopdaloop'"
-Code:
-const text = "loopdaloop! Thats a fast car.";
-const word = "loopdaloop";
-Expected: 1
-
-Test: "It should return 1 occurence for word 'zoinks'"
-Code:
-const text = "Zoinks! Thats a fast car.";
-const word = "zoinks";
-Expected: 1
+Expected: ['Dang,', 'look', 'at', 'the', 'over', 'there.']
 
 ## License
 
