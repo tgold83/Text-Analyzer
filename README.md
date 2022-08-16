@@ -93,6 +93,38 @@ const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
 
+Describe: ommitOffensiveText()
+
+Test: "It should return 0 occurences for an empty string"
+Code:
+const text = "";
+const word = "zoinks";
+Expected: 0
+
+Test: "It should return 1 occurence for word 'muppeteer'"
+Code:
+const text = "Muppeteer! Thats a fast car.";
+const word = "muppeteer";
+Expected: 1
+
+Test: "It should return 1 occurence for word 'biffaroni'"
+Code:
+const text = "biffaroni! Thats a fast car.";
+const word = "biffaroni";
+Expected: 1
+
+Test: "It should return 1 occurence for word 'loopdaloop'"
+Code:
+const text = "loopdaloop! Thats a fast car.";
+const word = "loopdaloop";
+Expected: 1
+
+Test: "It should return 1 occurence for word 'zoinks'"
+Code:
+const text = "Zoinks! Thats a fast car.";
+const word = "zoinks";
+Expected: 1
+
 ## License
 
 _Copyright <2022> <Timothy Empey & Ted Gold>
